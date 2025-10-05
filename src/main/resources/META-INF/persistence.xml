@@ -1,0 +1,17 @@
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+             version="2.2">
+    <persistence-unit name="userAdminPU">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <class>model.User</class>
+
+        <properties>
+            <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://dpg-d3gflsh5pdvs73efefhg-a.singapore-postgres.render.com:5432/assignmentdb_uu9l?sslmode=require"/>
+            <property name="javax.persistence.jdbc.user" value="thinh"/>
+            <property name="javax.persistence.jdbc.password" value="88VdWpGf25KGUrX3Qr4jjSLTIfWwIQXn"/>
+
+            <property name="hibernate.hbm2ddl.auto" value="update"/>
+            <property name="hibernate.show_sql" value="true"/>
+        </properties>
+    </persistence-unit>
+</persistence>
